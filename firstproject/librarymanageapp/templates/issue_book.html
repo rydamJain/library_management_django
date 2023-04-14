@@ -1,0 +1,78 @@
+{% extends 'base.html' %}
+{% block body %}
+<br>
+<br>
+<div class="container" >
+    <form method="POST"> {% csrf_token %}
+ 
+    <!-- <div class="row mt-4">
+        <div class="form-group col-md-12">
+            <label style="padding: 5; background-color: gold;"><i style="font-weight: bold;">User ID</i></label>
+            <input style="background-color:rgb(247, 201, 208)" type="number" class="form-control mt-2" name="student_id" placeholder="Enter ID of the student" required>
+        </div>
+    </div> -->
+ 
+    <div class="row mt-4">
+        <div class="form-group col-md-12" align="center">
+            <label style="padding: 5; background-color: gold;"><i style="font-weight: bold;">User ID</i></label>
+            <select style="width: 300px;; display:inline; background-color:rgb(247, 201, 208)" class="form-control mt-2" name="student_id" required>
+                {% for student in students %}
+                <option value="{{ student.id }}">{{ student.id }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+    <!-- <div class="row mt-4">
+        <div class="form-group col-md-12">
+            <label  style="padding: 5; background-color: gold;"><i style="font-weight: bold;">Book ID</i></label>
+            <input style="background-color:rgb(247, 201, 208)" type="number" class="form-control mt-2" name="book_id" placeholder="Enter id of the book" required>
+        </div>
+    </div> -->
+    <div class="row mt-4" align="center">
+        <div class="form-group col-md-12">
+            <label style="padding: 5; background-color: gold;"><i style="font-weight: bold;">Book ID</i></label>
+            <select style="width: 300px;; display:inline; background-color:rgb(247, 201, 208)" class="form-control mt-2" name="book_id" required>
+                {% for book in books %}
+                <option value="{{ book.id }}">{{ book.id }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+    <!-- <div class="row mt-4">
+        <div class="form-group col-md-12">
+            <label  style="padding: 5; background-color: gold;"><i style="font-weight: bold;">Book Name</i></label>
+            <input style="background-color:rgb(247, 201, 208)" type="text" class="form-control mt-2" name="book_name" placeholder="Enter name of the book" required>
+        </div>
+    </div> -->
+    <div class="row mt-4" align="center">
+        <div class="form-group col-md-12">
+            <label style="padding: 5; background-color: gold;"><i style="font-weight: bold;">Book Name</i></label>
+            <select style="width: 300px;; display:inline; background-color:rgb(247, 201, 208)" class="form-control mt-2" name="book_name" required>
+                {% for book in books %}
+                <option value="{{ book.name }}">{{ book.name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+    </div>
+    <div style="margin-top: 30;" align="center">
+    <button type="submit"  class="btn btn-primary mt-4" style="font-size: larger; font-weight: 900; background-color: gold; height: 40; width:150;color:black;">ISSUE BOOK</button>
+</div>
+    <!-- <button type="button" onclick="book_issued()" class="btn btn-primary mt-4" style="font-size: larger; font-weight: 900; background-color: gold; height: 40; width:150;color:black;">SUBMIT</button> -->
+
+</div>
+
+<!-- {% for message in messages %}
+<h2 style="padding: 5;background-color: gold; margin-left: 550px;margin-right: 400px;color:black">
+    {{message}}
+</h2>
+{% endfor %} -->
+
+</form>
+{% for message in messages %}
+<script>
+    window.onload = function() {
+        alert("{{message}}");
+    }
+</script>
+{% endfor %}
+{% endblock %}

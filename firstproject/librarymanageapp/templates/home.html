@@ -1,0 +1,126 @@
+{% extends 'base.html' %}
+
+{%block body%}
+    <h1 align="center" style=" color:rgb(32, 32, 32) ;background-color:gold">
+        Welcome to the library
+    </h1>
+    <div class="row mt-4" align="center">
+      <div class="form-group col-md-12">
+        <a style="font-weight: 900;height:45;font-size:large"  type="button" class="btn btn-warning" href="instructions">Instructions</a>
+      </div>
+    </div>
+
+    {% if request.user.is_superuser %}
+    <div class="row mt-4" align="center">
+      <div class="form-group col-md-12">
+        <a style="font-weight: 900;height:45;font-size:large" type="button" class="btn btn-warning" href="http://127.0.0.1:8000/librarymanageapp/addbook">Add Books</a>
+      </div>
+    </div>
+    <div class="row mt-4" align="center">
+      <div class="form-group col-md-12">
+        <a style="font-weight: 900;height:45;font-size:large"  type="button" class="btn btn-warning" href="http://127.0.0.1:8000/librarymanageapp/user">View Users Details</a>
+      </div>
+    </div>
+
+    <div class="row mt-4" align="center">
+      <div class="form-group col-md-12">
+        <a style="font-weight: 900;height:45;font-size:large"  type="button" class="btn btn-warning" href="http://127.0.0.1:8000/librarymanageapp/requests">Requests for Issue Books</a>
+      </div>
+    </div>
+   
+    <!-- <div style="margin: 40px;margin-left:500px;">
+      <a style="font-weight: 900;height:45;font-size:large"  type="button" class="btn btn-warning" href="http://127.0.0.1:8000/librarymanageapp/deletebook">Delete Book</a>
+  </div> -->
+  
+    <div class="row mt-4" align="center">
+      <div class="form-group col-md-12">
+        <a style="font-weight: 900;height:45;font-size:large"  type="button" class="btn btn-warning" href="http://127.0.0.1:8000/librarymanageapp/adminissuebook">Issue Book for User</a>
+      </div>
+    </div>
+
+    {% else %}
+    <div class="row mt-4" align="center">
+      <div class="form-group col-md-12">
+    <button style="font-weight: 900;height:45;font-size:large" type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">
+      Pay Fine
+     </button>
+      </div>
+    </div>
+     <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+       <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+             <div class="modal-header">
+                 <h5 class="modal-title" id="exampleModalLongTitle">Total Amount To Pay</h5>
+                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                 </button>
+             </div>
+             <div class="modal-body">
+               <h1> Rs {{ fine }} </h1>
+             </div>
+             <div class="modal-footer">
+                <button type="button" class="btn btn-secondary"  onclick="location.href='payfine'">Pay</button>
+             </div>
+           </div>
+       </div>
+     </div>
+
+
+    <!-- <div class="row mt-4" align="center">
+      <div class="form-group col-md-12">
+        <button style="font-weight: 900;height:45;font-size:large; margin-top:'90';" type="button" class="btn btn-warning" data-toggle="modal" data-target="#exampleModalCenter">
+          Add Books
+        </button>
+      </div>
+    </div>
+      <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalCenterTitle">Modal title</h5> 
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                    <h1 align="center" style="color: black;">
+                        You are not a superuser. Can't add books!!
+                    </h1>   
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div> -->
+    {% endif %}
+    <div class="row mt-4" align="center">
+      <div class="form-group col-md-12">
+        <a style="font-weight: 900;height:45;font-size:large" type="button" class="btn btn-warning" href="http://127.0.0.1:8000/librarymanageapp/viewbooks">View Available Books</a>
+      </div>
+    </div>
+
+    <!-- <div style="margin: 40px;margin-left:480px;">
+        <a style="font-weight: 900;height:45;font-size:large" type="button" class="btn btn-warning" href="http://127.0.0.1:8000/librarymanageapp/view-issued-books">View Issued Books</a>
+    </div> -->
+   
+      <div class="row mt-4" align="center">
+        <div class="form-group col-md-12">
+          <a style="font-weight: 900;height:45;font-size:large" type="button" class="btn btn-warning" href="http://127.0.0.1:8000/librarymanageapp/view-return-books">Return Book History</a>
+        </div>
+    </div>
+
+    <!-- <div style="margin: 40px;margin-left:480px;">
+        <a style="font-weight: 900;height:45;font-size:large" type="button" class="btn btn-warning" href="http://127.0.0.1:8000/librarymanageapp/view-return-books">View Return History</a>
+    </div> -->
+    <!-- <div style="margin: 40px;margin-left:480px;">
+        <a type="button" class="btn btn-warning" href="http://127.0.0.1:8000/librarymanageapp/logoutpage">Logout</a>
+    </div> -->
+    {% if messages %}
+<script>
+{% for message in messages %}
+    alert("{{ message }}");
+{% endfor %}
+</script>
+{% endif %}
+{% endblock %}

@@ -1,0 +1,1338 @@
+2023-03-29 11:07:44,304 [INFO] librarymanageapp.views 51: Incorrect credentials. Use correct credentials
+2023-03-29 11:29:11,713 [INFO] librarymanageapp.views 51: Incorrect credentials. Use correct credentials
+2023-03-29 11:58:41,351 [ERROR] librarymanageapp.views 54: Fine calculation exception:Fine is not applicable
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 52, in loginpage
+    raise FineCalculationException("Fine is not applicable")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable
+2023-03-29 14:40:21,819 [ERROR] librarymanageapp.views 67: Fine calculation exception:Fine is not applicable
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 65, in loginpage
+    raise FineCalculationException("Fine is not applicable")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable
+2023-03-29 14:45:54,719 [ERROR] librarymanageapp.views 67: Fine calculation exception:Fine is not applicable
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 65, in loginpage
+    raise FineCalculationException("Fine is not applicable")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable
+2023-03-29 14:48:35,973 [ERROR] librarymanageapp.views 43: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 32, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-29 14:48:35,973 [ERROR] librarymanageapp.views 25: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 20, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-29 14:48:35,982 [ERROR] librarymanageapp.views 67: Fine calculation exception:Fine is not applicable
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 65, in loginpage
+    raise FineCalculationException("Fine is not applicable")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable
+2023-03-29 14:48:53,864 [ERROR] librarymanageapp.views 25: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 20, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-29 14:49:17,454 [ERROR] librarymanageapp.views 67: Fine calculation exception:Fine is not applicable
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 65, in loginpage
+    raise FineCalculationException("Fine is not applicable")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable
+2023-03-29 15:20:03,150 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 06:03:34,636 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 06:03:45,100 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 06:06:48,429 [INFO] librarymanageapp.views 330: book returned successfully
+2023-03-30 06:15:36,127 [INFO] librarymanageapp.views 334: this is not in the list of issued books
+2023-03-30 06:16:10,727 [INFO] librarymanageapp.views 330: book returned successfully
+2023-03-30 06:16:18,191 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 06:18:23,419 [ERROR] librarymanageapp.views 56: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 45, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 06:18:23,419 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 06:18:27,326 [INFO] librarymanageapp.views 334: this is not in the list of issued books
+2023-03-30 06:19:14,387 [INFO] librarymanageapp.views 334: this is not in the list of issued books
+2023-03-30 07:07:53,165 [ERROR] librarymanageapp.views 56: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 45, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 07:07:53,173 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 07:08:16,970 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 07:09:02,581 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 07:09:02,588 [ERROR] librarymanageapp.views 105: Fine is not applicable
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 102, in home
+    raise FineCalculationException("Fine is not applicable")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable
+2023-03-30 07:09:31,414 [INFO] librarymanageapp.views 84: Incorrect credentials. Use correct credentials
+2023-03-30 07:27:06,038 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 07:27:27,890 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 07:27:27,890 [ERROR] librarymanageapp.views 105: Fine is not applicable
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 103, in home
+    raise FineCalculationException("Fine is not applicable")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable
+2023-03-30 07:28:04,180 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 07:28:04,188 [ERROR] librarymanageapp.views 105: Fine is not applicable
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 103, in home
+    raise FineCalculationException("Fine is not applicable")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable
+2023-03-30 07:28:39,845 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 07:28:39,845 [ERROR] librarymanageapp.views 105: Fine is not applicable
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 103, in home
+    raise FineCalculationException("Fine is not applicable")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable
+2023-03-30 07:28:50,876 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 07:28:50,876 [ERROR] librarymanageapp.views 105: Fine is not applicable
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 103, in home
+    raise FineCalculationException("Fine is not applicable")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable
+2023-03-30 07:31:52,089 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 07:31:52,089 [ERROR] librarymanageapp.views 105: Fine is not applicable
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 103, in home
+    raise FineCalculationException("Fine is not applicable")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable
+2023-03-30 07:32:40,351 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 07:32:40,351 [ERROR] librarymanageapp.views 105: Fine is not applicable
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 103, in home
+    raise FineCalculationException("Fine is not applicable")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable
+2023-03-30 07:33:01,839 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-30 07:33:01,840 [ERROR] librarymanageapp.views 105: Fine is not applicable
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 103, in home
+    raise FineCalculationException("Fine is not applicable")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable
+2023-03-30 08:30:54,409 [ERROR] librarymanageapp.views 56: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 45, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 11:57:07,487 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 11:57:12,568 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 12:12:16,518 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 12:14:54,317 [ERROR] librarymanageapp.views 49: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 38, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 12:14:54,317 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 12:23:13,384 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 15:17:22,272 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 15:17:29,477 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 15:17:46,738 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 15:30:19,945 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 15:31:10,306 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 15:31:19,816 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 15:32:20,008 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 15:33:31,063 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 16:26:33,599 [ERROR] librarymanageapp.views 49: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 38, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 16:26:33,607 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-03-31 16:26:33,607 [ERROR] librarymanageapp.views 73: Fine calculation exception:Fine is not applicableeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 71, in loginpage
+    raise FineCalculationException("Fine is not applicableeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicableeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee
+2023-04-01 18:09:33,838 [INFO] librarymanageapp.views 76: Incorrect credentials. Use correct credentials
+2023-04-01 18:10:40,011 [ERROR] librarymanageapp.customexceptions 9: Fine Calculation Exception
+NoneType: None
+2023-04-01 18:17:33,950 [ERROR] librarymanageapp.customexceptions 9: Fine Calculation Exception
+NoneType: None
+2023-04-01 18:17:33,950 [ERROR] librarymanageapp.customexceptions 9: Fine Calculation Exception
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 71, in loginpage
+    raise FineCalculationException("Fine is not applicable. Exception in loginpage function")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable. Exception in loginpage function
+2023-04-01 18:23:37,388 [INFO] librarymanageapp.views 76: Incorrect credentials. Use correct credentials
+2023-04-01 18:26:08,733 [ERROR] librarymanageapp.views 73: Fine calculation exception:Fine is not applicable. Exception in loginpage function
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 71, in loginpage
+    raise FineCalculationException("Fine is not applicable. Exception in loginpage function")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable. Exception in loginpage function
+2023-04-01 18:47:17,751 [ERROR] librarymanageapp.views 89: Username Not Found: No username provided
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 87, in loginpage
+    raise UsernameNotFound("No username provided")
+librarymanageapp.customexceptions.UsernameNotFound: No username provided
+2023-04-01 22:03:25,905 [ERROR] librarymanageapp.views 49: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 38, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 22:03:25,937 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 22:03:48,078 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 22:09:13,849 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 22:09:30,362 [INFO] librarymanageapp.views 373: this is not in the list of issued books
+2023-04-01 22:09:43,007 [INFO] librarymanageapp.views 369: book returned successfully
+2023-04-01 22:09:48,891 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 22:09:54,220 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 22:10:04,995 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:24:23,124 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:26:33,475 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:26:42,490 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:27:01,273 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:27:09,555 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:29:37,899 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:29:44,041 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:30:04,912 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:30:33,399 [INFO] librarymanageapp.views 373: this is not in the list of issued books
+2023-04-01 23:30:50,648 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:31:02,864 [INFO] librarymanageapp.views 369: book returned successfully
+2023-04-01 23:32:27,367 [INFO] librarymanageapp.views 373: this is not in the list of issued books
+2023-04-01 23:32:40,025 [INFO] librarymanageapp.views 373: this is not in the list of issued books
+2023-04-01 23:32:51,122 [INFO] librarymanageapp.views 373: this is not in the list of issued books
+2023-04-01 23:33:08,060 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:33:17,271 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:33:25,354 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:34:16,885 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:34:26,316 [INFO] librarymanageapp.views 369: book returned successfully
+2023-04-01 23:34:50,170 [INFO] librarymanageapp.views 373: this is not in the list of issued books
+2023-04-01 23:34:59,718 [INFO] librarymanageapp.views 373: this is not in the list of issued books
+2023-04-01 23:35:08,267 [INFO] librarymanageapp.views 369: book returned successfully
+2023-04-01 23:35:10,991 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:35:15,823 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:35:29,148 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-01 23:35:38,599 [INFO] librarymanageapp.views 369: book returned successfully
+2023-04-01 23:39:58,558 [INFO] librarymanageapp.views 375: this is not in the list of issued books
+2023-04-01 23:40:11,730 [INFO] librarymanageapp.views 375: this is not in the list of issued books
+2023-04-01 23:45:15,231 [ERROR] librarymanageapp.views 28: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 23, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 17:19:06,596 [ERROR] librarymanageapp.views 58: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 47, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 17:19:06,798 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 17:25:03,960 [ERROR] librarymanageapp.views 58: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 47, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 17:25:04,220 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 17:36:22,089 [ERROR] librarymanageapp.views 58: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 47, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 17:36:22,122 [ERROR] librarymanageapp.views 36: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 31, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 17:54:09,973 [ERROR] librarymanageapp.views 62: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 17:54:10,013 [ERROR] librarymanageapp.views 40: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 35, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 17:57:21,565 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 50, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 17:57:21,596 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 18:00:49,342 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 50, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 18:00:49,366 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 18:02:57,817 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 21:32:23,288 [INFO] librarymanageapp.views 90: Incorrect credentials. Use correct credentials
+2023-04-02 21:38:50,736 [ERROR] librarymanageapp.views 308: Something went wrong : cannot access local variable 'issue_request_list' where it is not associated with a value
+2023-04-02 21:38:56,910 [ERROR] librarymanageapp.views 308: Something went wrong : cannot access local variable 'issue_request_list' where it is not associated with a value
+2023-04-02 21:43:32,509 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 50, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 21:43:32,538 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-02 21:49:38,991 [INFO] librarymanageapp.views 396: book returned successfully
+2023-04-02 21:49:50,234 [INFO] librarymanageapp.views 400: this is not in the list of issued books
+2023-04-02 21:52:00,356 [INFO] librarymanageapp.views 396: book returned successfully
+2023-04-02 21:52:20,584 [INFO] librarymanageapp.views 400: this is not in the list of issued books
+2023-04-02 21:53:26,294 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 50, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-03 08:52:45,901 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-03 08:52:45,919 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-03 08:52:54,744 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-03 08:53:36,503 [INFO] librarymanageapp.views 180: Book added successfully
+2023-04-03 08:53:38,433 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-03 09:03:04,388 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-03 12:00:05,979 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-03 12:00:06,013 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-03 12:04:21,127 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-03 12:04:30,650 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-03 12:11:51,442 [ERROR] librarymanageapp.views 463: Username not found
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 460, in instructions
+    raise UsernameNotFound("Username not found")
+librarymanageapp.customexceptions.UsernameNotFound: Username not found
+2023-04-03 12:13:52,960 [ERROR] librarymanageapp.views 463: Username not found
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 460, in instructions
+    raise UsernameNotFound("Username not found")
+librarymanageapp.customexceptions.UsernameNotFound: Username not found
+2023-04-03 12:14:22,785 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-04 08:56:00,480 [ERROR] librarymanageapp.views 63: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 53, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-04 08:56:00,483 [ERROR] librarymanageapp.views 41: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 36, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-04 10:53:54,732 [INFO] librarymanageapp.views 93: Incorrect credentials. Use correct credentials
+2023-04-04 10:54:04,113 [ERROR] librarymanageapp.views 63: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 53, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-04 10:54:04,138 [ERROR] librarymanageapp.views 41: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 36, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-04 10:54:04,146 [ERROR] librarymanageapp.views 88: Fine calculation exception:Fine is not applicable. Exception in loginpage function
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 86, in loginpage
+    raise FineCalculationException("Fine is not applicable. Exception in loginpage function")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable. Exception in loginpage function
+2023-04-04 10:54:04,146 [ERROR] librarymanageapp.views 96: Error occurred  during user login :no internet connection
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 86, in loginpage
+    raise FineCalculationException("Fine is not applicable. Exception in loginpage function")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable. Exception in loginpage function
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 90, in loginpage
+    raise RequestNotFoundException("no internet connection") from error_msg
+librarymanageapp.customexceptions.RequestNotFoundException: no internet connection
+2023-04-04 10:55:10,047 [ERROR] librarymanageapp.views 63: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 53, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-04 10:55:10,090 [ERROR] librarymanageapp.views 41: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 36, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-04 10:55:10,092 [ERROR] librarymanageapp.views 88: Fine calculation exception:Fine is not applicable. Exception in loginpage function
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 86, in loginpage
+    raise FineCalculationException("Fine is not applicable. Exception in loginpage function")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable. Exception in loginpage function
+2023-04-04 10:55:10,092 [ERROR] librarymanageapp.views 96: Error occurred  during user login :no internet connection
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 86, in loginpage
+    raise FineCalculationException("Fine is not applicable. Exception in loginpage function")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable. Exception in loginpage function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 90, in loginpage
+    raise RequestNotFoundException("no internet connection")
+librarymanageapp.customexceptions.RequestNotFoundException: no internet connection
+2023-04-04 11:59:26,567 [ERROR] librarymanageapp.views 63: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 53, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-04 11:59:26,576 [ERROR] librarymanageapp.views 41: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 36, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-04 11:59:26,584 [ERROR] librarymanageapp.views 88: Fine calculation exception:Fine is not applicable. Exception in loginpage function
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 86, in loginpage
+    raise FineCalculationException("Fine is not applicable. Exception in loginpage function")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable. Exception in loginpage function
+2023-04-04 11:59:26,584 [ERROR] librarymanageapp.views 96: Error occurred  during user login :no internet connection
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 86, in loginpage
+    raise FineCalculationException("Fine is not applicable. Exception in loginpage function")
+librarymanageapp.customexceptions.FineCalculationException: Fine is not applicable. Exception in loginpage function
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 90, in loginpage
+    raise RequestNotFoundException("no internet connection")
+librarymanageapp.customexceptions.RequestNotFoundException: no internet connection
+2023-04-04 11:59:29,598 [INFO] librarymanageapp.views 93: Incorrect credentials. Use correct credentials
+2023-04-04 12:00:58,712 [INFO] librarymanageapp.views 93: Incorrect credentials. Use correct credentials
+2023-04-04 12:01:04,031 [ERROR] librarymanageapp.views 63: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 53, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-05 08:58:35,947 [ERROR] librarymanageapp.views 62: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 52, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-05 08:58:35,972 [ERROR] librarymanageapp.views 40: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 35, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-05 09:23:53,797 [ERROR] librarymanageapp.views 40: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 35, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-05 13:41:47,399 [ERROR] librarymanageapp.views 40: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 35, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-05 13:41:55,843 [ERROR] librarymanageapp.views 40: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 35, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-05 13:42:09,011 [ERROR] librarymanageapp.views 40: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 35, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-05 13:43:25,417 [ERROR] librarymanageapp.views 40: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 35, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-05 14:20:40,145 [ERROR] librarymanageapp.views 94: Error occurred  during user login :no internet connection
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 84, in loginpage
+    raise FineCalculationException(search_error_message("fine_message"))
+librarymanageapp.customexceptions.FineCalculationException: "Fine is not applicable. Exception in loginpage function"
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 88, in loginpage
+    raise RequestNotFoundException("no internet connection")
+librarymanageapp.customexceptions.RequestNotFoundException: no internet connection
+
+
+2023-04-06 15:11:24,470 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-07 10:51:21,261 [ERROR] librarymanageapp.views 164: ['Passwords do not match']
+2023-04-07 10:51:57,443 [ERROR] librarymanageapp.views 164: ['Passwords do not match']
+2023-04-07 10:53:09,854 [ERROR] librarymanageapp.views 164: ['Passwords do not match']
+2023-04-07 10:53:37,284 [ERROR] librarymanageapp.views 164: ['Passwords do not match']
+2023-04-07 10:54:08,158 [ERROR] librarymanageapp.views 164: ['Passwords do not match']
+2023-04-07 11:02:42,559 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 11:03:01,737 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 11:08:14,078 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 11:11:52,007 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 13:03:35,277 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 13:04:08,385 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 13:09:15,726 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 13:11:42,009 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-07 13:12:05,706 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-07 13:12:15,638 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-07 13:12:32,275 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-07 13:14:20,915 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-07 13:14:20,932 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-07 13:42:52,219 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 13:43:59,975 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 13:44:32,505 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 13:46:12,633 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 13:46:30,451 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 14:24:27,966 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 14:27:03,043 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 14:27:24,807 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 14:31:58,589 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 14:41:27,618 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 14:44:56,331 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 14:53:18,109 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 14:55:32,382 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 14:56:27,824 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 14:57:31,403 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 15:17:31,338 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 15:30:13,464 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 15:30:43,407 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-07 15:33:52,822 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 21:11:55,865 [ERROR] librarymanageapp.views 41: Request Data not found
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 29, in fine_calculation
+    raise RequestNotFoundException("Request Data not found")
+librarymanageapp.customexceptions.RequestNotFoundException: Request Data not found
+2023-04-09 21:11:56,406 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 21:21:38,088 [ERROR] librarymanageapp.views 41: Request Data not found
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 29, in fine_calculation
+    raise RequestNotFoundException("Request Data not found")
+librarymanageapp.customexceptions.RequestNotFoundException: Request Data not found
+2023-04-09 21:21:38,100 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-09 21:21:38,673 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 21:31:28,909 [ERROR] librarymanageapp.views 41: Request Data not found
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 29, in fine_calculation
+    raise RequestNotFoundException("Request Data not found")
+librarymanageapp.customexceptions.RequestNotFoundException: Request Data not found
+2023-04-09 21:31:28,920 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-09 21:31:29,452 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 21:38:41,032 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 21:39:43,298 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 21:48:35,123 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 21:49:30,487 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 21:49:50,134 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 21:50:35,617 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 21:56:17,903 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 21:58:16,194 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 22:01:01,987 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 22:02:03,649 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 22:02:16,500 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 22:09:21,969 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 22:09:42,140 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 22:10:04,533 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 22:17:28,783 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 22:17:52,217 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 22:18:24,434 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 22:22:41,686 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 22:28:05,706 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 22:30:39,908 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 22:30:55,349 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 22:31:15,988 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-09 22:39:37,724 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-10 09:03:41,767 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-10 09:05:47,047 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-10 16:44:18,507 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-10 16:46:24,109 [INFO] librarymanageapp.views 160: User created successfully
+2023-04-11 14:17:26,975 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-11 14:19:47,861 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-12 11:29:00,799 [INFO] librarymanageapp.views 181: Book added successfully
+2023-04-12 11:29:03,894 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-12 11:32:36,570 [INFO] librarymanageapp.views 181: Book added successfully
+2023-04-12 11:32:38,781 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-12 11:34:37,470 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-12 11:38:44,514 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-12 11:38:44,542 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-12 11:39:53,027 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-12 11:43:17,863 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-12 11:43:43,819 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-12 11:43:54,944 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-12 11:44:01,010 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-12 11:44:11,302 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-12 11:44:23,485 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 10:56:04,972 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 10:56:04,988 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 10:56:43,230 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 10:56:59,228 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 15:34:11,456 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 15:34:19,681 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 15:35:30,524 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 16:14:16,794 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 16:14:16,811 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 16:14:28,071 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 17:55:17,874 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 17:55:17,905 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 17:55:41,543 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 17:56:01,630 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 17:56:11,476 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 17:56:18,789 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 17:58:01,999 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 17:58:02,022 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 17:58:33,250 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 17:58:49,317 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 17:59:11,549 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 17:59:22,325 [INFO] librarymanageapp.views 405: this is not in the list of issued books
+2023-04-13 17:59:26,861 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 17:59:38,776 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 17:59:55,550 [INFO] librarymanageapp.views 401: book returned successfully
+2023-04-13 18:00:07,104 [INFO] librarymanageapp.views 401: book returned successfully
+2023-04-13 18:00:10,582 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:00:21,163 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:00:51,906 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:01:26,538 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:02:03,237 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:02:18,317 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:02:33,362 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:12:45,037 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:13:10,809 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:13:11,026 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:14:05,354 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:20:38,470 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:22:36,098 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:36:14,619 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:44:40,170 [INFO] librarymanageapp.views 417: this is not in the list of issued books
+2023-04-13 18:44:48,178 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:45:07,860 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:45:20,623 [INFO] librarymanageapp.views 413: book returned successfully
+2023-04-13 18:45:35,785 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-13 18:53:05,414 [INFO] librarymanageapp.views 413: book returned successfully
+2023-04-14 09:09:17,798 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 09:09:17,822 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 09:22:16,465 [INFO] librarymanageapp.views 413: book returned successfully
+2023-04-14 09:22:39,423 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 09:22:45,540 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 09:23:37,494 [INFO] librarymanageapp.views 413: book returned successfully
+2023-04-14 09:23:43,839 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 09:23:45,684 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 09:23:51,443 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 09:24:15,047 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 09:24:22,315 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 09:25:19,820 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 09:25:48,069 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 09:26:00,826 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:04:05,494 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:04:05,518 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:04:37,650 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:05:44,616 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:11:27,796 [INFO] librarymanageapp.views 413: book returned successfully
+2023-04-14 10:16:49,775 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:17:11,165 [INFO] librarymanageapp.views 413: book returned successfully
+2023-04-14 10:17:40,175 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:17:40,191 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:17:46,706 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:17:53,587 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:18:00,364 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:20:42,966 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:20:56,485 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:20:56,501 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:21:08,558 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:22:06,204 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:22:17,298 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:22:18,150 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:22:18,352 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:22:30,845 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:23:08,896 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:23:24,835 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:23:33,992 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:23:41,043 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:24:05,732 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:24:55,501 [INFO] librarymanageapp.views 413: book returned successfully
+2023-04-14 10:25:45,113 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:25:45,131 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 10:25:49,168 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 14:05:26,046 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 14:05:35,295 [ERROR] librarymanageapp.views 61: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 14:05:35,311 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 14:05:50,072 [ERROR] librarymanageapp.views 39: No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present

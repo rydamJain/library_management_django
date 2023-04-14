@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block body %}
+<body align="center">
+<div class="container mt-4">
+    <h1 style="background-color: gold;" class="text-center">Returned Book List</h1>
+    <table align="center" style="background-color: rgb(233, 206, 55);"class="table table-hover" id="example">
+        <thead>
+            <tr>
+                <th style="width: 100px;">Student id</th>
+                <th style="width: 100px;">Book ID</th>
+                <th style="width: 100px;">Book Name</th>
+                <th style="width: 100px;">Return Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            <tr>
+                <td>{{book.student_id}}</td>
+                <td>{{book.book_id}}</td>
+                <td>{{book.book_name}}</td>
+                <td>{{book.return_date}}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+    <br>
+    <br>
+</body>
+{% endblock %}

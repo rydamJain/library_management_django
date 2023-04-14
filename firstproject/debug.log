@@ -1,0 +1,62 @@
+2023-04-14 14:05:29,699 [INFO] django.server 187: "GET /librarymanageapp/loginpage HTTP/1.1" 200 4699
+2023-04-14 14:05:34,806 [DEBUG] django.db.backends 131: (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+2023-04-14 14:05:34,806 [DEBUG] django.db.backends 131: (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`username` = 'rydam' LIMIT 21; args=('rydam',); alias=default
+2023-04-14 14:05:35,231 [DEBUG] django.db.backends 131: (0.000) SELECT 1 AS `a` FROM `django_session` WHERE `django_session`.`session_key` = 's0jdvuowapkv14vyoq530kvg38notva0' LIMIT 1; args=(1, 's0jdvuowapkv14vyoq530kvg38notva0'); alias=default
+2023-04-14 14:05:35,249 [DEBUG] django.db.backends 131: (0.000) INSERT INTO `django_session` (`session_key`, `session_data`, `expire_date`) VALUES ('s0jdvuowapkv14vyoq530kvg38notva0', 'e30:1pnEu7:F834_c3F9qu2JHYDQweowXuOKCRQ1omSFeXH-bTWYZ0', '2023-04-28 08:35:35.239753'); args=('s0jdvuowapkv14vyoq530kvg38notva0', 'e30:1pnEu7:F834_c3F9qu2JHYDQweowXuOKCRQ1omSFeXH-bTWYZ0', '2023-04-28 08:35:35.239753'); alias=default
+2023-04-14 14:05:35,265 [DEBUG] django.db.backends 131: (0.000) UPDATE `auth_user` SET `last_login` = '2023-04-14 08:35:35.265650' WHERE `auth_user`.`id` = 1; args=('2023-04-14 08:35:35.265650', 1); alias=default
+2023-04-14 14:05:35,281 [DEBUG] django.db.backends 131: (0.000) SELECT `librarymanageapp_issuedbook`.`id`, `librarymanageapp_issuedbook`.`student_id`, `librarymanageapp_issuedbook`.`book_id`, `librarymanageapp_issuedbook`.`book_name`, `librarymanageapp_issuedbook`.`issued_date`, `librarymanageapp_issuedbook`.`to_be_return_date`, `librarymanageapp_issuedbook`.`fine` FROM `librarymanageapp_issuedbook` WHERE `librarymanageapp_issuedbook`.`student_id` = '1'; args=('1',); alias=default
+No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 51, in send_book_return_notification
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 14:05:35,295 [DEBUG] django.db.backends 131: (0.000) SELECT `librarymanageapp_issuedbook`.`id`, `librarymanageapp_issuedbook`.`student_id`, `librarymanageapp_issuedbook`.`book_id`, `librarymanageapp_issuedbook`.`book_name`, `librarymanageapp_issuedbook`.`issued_date`, `librarymanageapp_issuedbook`.`to_be_return_date`, `librarymanageapp_issuedbook`.`fine` FROM `librarymanageapp_issuedbook` WHERE `librarymanageapp_issuedbook`.`student_id` = '1'; args=('1',); alias=default
+No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 14:05:35,319 [DEBUG] django.db.backends 131: (0.000) UPDATE `django_session` SET `session_data` = '.eJxVjEEOwiAQRe_C2hChYKlL9z0DmWFmpGogKe3KeHfbpAvdvvf-f6sI65Lj2niOE6mrMur0yxDSk8su6AHlXnWqZZkn1HuiD9v0WIlft6P9O8jQ8rbuHIV0QWPFoaD1JJgSyxBCZ-U8sPXiUcQCCltngu9dkgABoN8ok_p8ARZ9OZE:1pnEu7:r5S195N_KrhDTFKgXVYj2qrzBbtdL_MfNd5XKsEnglU', `expire_date` = '2023-04-28 08:35:35.319845' WHERE `django_session`.`session_key` = 's0jdvuowapkv14vyoq530kvg38notva0'; args=('.eJxVjEEOwiAQRe_C2hChYKlL9z0DmWFmpGogKe3KeHfbpAvdvvf-f6sI65Lj2niOE6mrMur0yxDSk8su6AHlXnWqZZkn1HuiD9v0WIlft6P9O8jQ8rbuHIV0QWPFoaD1JJgSyxBCZ-U8sPXiUcQCCltngu9dkgABoN8ok_p8ARZ9OZE:1pnEu7:r5S195N_KrhDTFKgXVYj2qrzBbtdL_MfNd5XKsEnglU', '2023-04-28 08:35:35.319845', 's0jdvuowapkv14vyoq530kvg38notva0'); alias=default
+2023-04-14 14:05:35,345 [INFO] django.server 187: "POST /librarymanageapp/loginpage HTTP/1.1" 200 7682
+2023-04-14 14:05:38,311 [DEBUG] django.db.backends 131: (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+2023-04-14 14:05:38,331 [DEBUG] django.db.backends 131: (0.016) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2023-04-14 08:35:38.303402' AND `django_session`.`session_key` = 's0jdvuowapkv14vyoq530kvg38notva0') LIMIT 21; args=('2023-04-14 08:35:38.303402', 's0jdvuowapkv14vyoq530kvg38notva0'); alias=default
+2023-04-14 14:05:38,347 [DEBUG] django.db.backends 131: (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1 LIMIT 21; args=(1,); alias=default
+2023-04-14 14:05:38,363 [DEBUG] django.db.backends 131: (0.000) SELECT `librarymanageapp_book`.`category` FROM `librarymanageapp_book`; args=(); alias=default
+2023-04-14 14:05:38,382 [DEBUG] django.db.backends 131: (0.000) SELECT `librarymanageapp_book`.`id`, `librarymanageapp_book`.`name`, `librarymanageapp_book`.`author`, `librarymanageapp_book`.`isbn`, `librarymanageapp_book`.`quantity`, `librarymanageapp_book`.`price`, `librarymanageapp_book`.`category` FROM `librarymanageapp_book`; args=(); alias=default
+2023-04-14 14:05:38,408 [INFO] django.server 187: "GET /librarymanageapp/viewbooks HTTP/1.1" 200 36072
+2023-04-14 14:05:40,479 [DEBUG] django.db.backends 131: (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+2023-04-14 14:05:40,495 [DEBUG] django.db.backends 131: (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2023-04-14 08:35:40.471996' AND `django_session`.`session_key` = 's0jdvuowapkv14vyoq530kvg38notva0') LIMIT 21; args=('2023-04-14 08:35:40.471996', 's0jdvuowapkv14vyoq530kvg38notva0'); alias=default
+2023-04-14 14:05:40,520 [DEBUG] django.db.backends 131: (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1 LIMIT 21; args=(1,); alias=default
+2023-04-14 14:05:40,539 [DEBUG] django.db.backends 131: (0.000) SELECT `librarymanageapp_issuedbook`.`id`, `librarymanageapp_issuedbook`.`student_id`, `librarymanageapp_issuedbook`.`book_id`, `librarymanageapp_issuedbook`.`book_name`, `librarymanageapp_issuedbook`.`issued_date`, `librarymanageapp_issuedbook`.`to_be_return_date`, `librarymanageapp_issuedbook`.`fine` FROM `librarymanageapp_issuedbook`; args=(); alias=default
+2023-04-14 14:05:40,564 [INFO] django.server 187: "GET /librarymanageapp/view-issued-books HTTP/1.1" 200 8521
+2023-04-14 14:05:50,008 [DEBUG] django.db.backends 131: (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+2023-04-14 14:05:50,028 [DEBUG] django.db.backends 131: (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2023-04-14 08:35:50.004587' AND `django_session`.`session_key` = 's0jdvuowapkv14vyoq530kvg38notva0') LIMIT 21; args=('2023-04-14 08:35:50.004587', 's0jdvuowapkv14vyoq530kvg38notva0'); alias=default
+2023-04-14 14:05:50,039 [DEBUG] django.db.backends 131: (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1 LIMIT 21; args=(1,); alias=default
+2023-04-14 14:05:50,055 [DEBUG] django.db.backends 131: (0.000) SELECT `librarymanageapp_issuedbook`.`id`, `librarymanageapp_issuedbook`.`student_id`, `librarymanageapp_issuedbook`.`book_id`, `librarymanageapp_issuedbook`.`book_name`, `librarymanageapp_issuedbook`.`issued_date`, `librarymanageapp_issuedbook`.`to_be_return_date`, `librarymanageapp_issuedbook`.`fine` FROM `librarymanageapp_issuedbook` WHERE `librarymanageapp_issuedbook`.`student_id` = '1'; args=('1',); alias=default
+No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+No Book Present
+Traceback (most recent call last):
+  File "C:\itt\firstproject\librarymanageapp\views.py", line 34, in fine_calculation
+    raise BookNotFoundException("No Book Present")
+librarymanageapp.customexceptions.BookNotFoundException: No Book Present
+2023-04-14 14:05:50,075 [INFO] django.server 187: "GET /librarymanageapp/ HTTP/1.1" 200 7682
+2023-04-14 14:05:53,545 [DEBUG] django.db.backends 131: (0.000) SET SESSION TRANSACTION ISOLATION LEVEL READ COMMITTED; args=None; alias=default
+2023-04-14 14:05:53,560 [DEBUG] django.db.backends 131: (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE (`django_session`.`expire_date` > '2023-04-14 08:35:53.541952' AND `django_session`.`session_key` = 's0jdvuowapkv14vyoq530kvg38notva0') LIMIT 21; args=('2023-04-14 08:35:53.541952', 's0jdvuowapkv14vyoq530kvg38notva0'); alias=default
+2023-04-14 14:05:53,576 [DEBUG] django.db.backends 131: (0.000) SELECT `auth_user`.`id`, `auth_user`.`password`, `auth_user`.`last_login`, `auth_user`.`is_superuser`, `auth_user`.`username`, `auth_user`.`first_name`, `auth_user`.`last_name`, `auth_user`.`email`, `auth_user`.`is_staff`, `auth_user`.`is_active`, `auth_user`.`date_joined` FROM `auth_user` WHERE `auth_user`.`id` = 1 LIMIT 21; args=(1,); alias=default
+2023-04-14 14:05:53,600 [DEBUG] django.db.backends 131: (0.000) SELECT `django_session`.`session_key`, `django_session`.`session_data`, `django_session`.`expire_date` FROM `django_session` WHERE `django_session`.`session_key` = 's0jdvuowapkv14vyoq530kvg38notva0' LIMIT 21; args=('s0jdvuowapkv14vyoq530kvg38notva0',); alias=default
+2023-04-14 14:05:53,628 [DEBUG] django.db.backends 131: (0.015) DELETE FROM `django_session` WHERE `django_session`.`session_key` IN ('s0jdvuowapkv14vyoq530kvg38notva0'); args=('s0jdvuowapkv14vyoq530kvg38notva0',); alias=default
+2023-04-14 14:05:53,644 [INFO] django.server 187: "GET /librarymanageapp/logoutpage HTTP/1.1" 200 861

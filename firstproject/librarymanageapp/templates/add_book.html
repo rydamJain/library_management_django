@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% block body %}
+
+<div class="container mt-3" style="padding: 2; padding-left: 20; padding-right: 80; background-color: rgba(0, 0, 0, 0.596)">
+    
+    <form method="POST"> {% csrf_token %}
+    <div class="row mt-4" align="center">
+        <div class="form-group col-md-12">
+            <label style=" margin-right: 5; width:120; padding: 5; background-color: gold;"><i style="font-weight: bold;">Book Name</i></label>
+            <input style="width:300; display:inline; background-color:rgb(247, 201, 208)" type="text" class="form-control mt-2" name="name" placeholder="Enter name of the Book" required>
+        </div>
+    </div>
+ 
+    <div class="row mt-4" align="center">
+        <div class="form-group col-md-12">
+            <label style=" margin-right: 5;  width:120; padding: 5; background-color: gold;"><i style="font-weight: bold;">Author Name</i></label>
+            <input style="width:300; display:inline; background-color:rgb(247, 201, 208)"  type="text" class="form-control mt-2" name="author" placeholder="Enter name of the Author" required>
+        </div>
+    </div>
+
+    
+      <div class="row mt-4" align="center">
+        <div class="form-group col-md-12">
+          <label for="category-dropdown" style="padding: 5; background-color: gold;"><i style="font-weight: bold;">Category</i></label>
+          <select name="category" id="category-dropdown" onchange="handleCategorySelection()" style="width: 250px; display:inline; background-color:rgb(247, 201, 208)" class="form-control mt-2" >
+            <option value=""> Select a Category </option>
+            {% for category in categories %}
+                <option value="{{category}}">{{ category }}</option>
+            {% endfor %}
+            <option value="new_category"> NewCategory </option>
+          </select>
+          <div style="display: inline;height:200;width:50">
+          <a onclick="display_options()" style="color:white"> &#x2B9F; </a>
+          </div>
+        </div>
+      </div> 
+
+      
+    <div class="row mt-4" align="center">
+        <div class="form-group col-md-12">
+            <label style=" margin-right: 5;  width:120; padding: 5; background-color: gold;"><i style="font-weight: bold;">ISBN</i></label>
+            <input style="width:300; display:inline; background-color:rgb(247, 201, 208)"  type="number" class="form-control mt-2" name="book_isbn" placeholder="Enter ISBN of the book" required>
+        </div>
+    </div>
+ 
+    <div class="row mt-4" align="center">
+        <div class="form-group col-md-12">
+            <label style=" margin-right: 5;  width:120; padding: 5; background-color: gold;"><i style="font-weight: bold;">Quantity</i></label>
+            <input style=" width:300;display:inline; background-color:rgb(247, 201, 208)"  type="number" class="form-control mt-2" name="quantity" placeholder="Enter quantity of the book" required>
+        </div>
+    </div>
+    <div class="row mt-4" align="center">
+        <div class="form-group col-md-12">
+            <label style=" margin-right: 5;  width:120; padding: 5; background-color: gold;"><i style="font-weight: bold;">Price</i></label>
+            <input  style="width:300; display:inline; background-color:rgb(247, 201, 208)" type="number" min="0" class="form-control mt-2" name="price" placeholder="Enter price of the book" required>
+        </div>
+    </div>
+    <div class="row mt-4" align="center">
+        <div class="form-group col-md-12">
+            <button type="submit" class="btn btn-primary mt-4" onclick="book_added()" style="font-size: larger; font-weight: 900; background-color: gold; height: 40; width:150;color:black;">Add Book</button>
+        </div>
+    </div>
+</div>
+</form>
+
+<script>
+    function book_added(){
+        alert("Book added successfully!");
+    }
+
+    var categoryDropdown = document.getElementById("category-dropdown");
+    var inputField = document.createElement("input");
+
+    function handleCategorySelection() {
+            inputField.type = "text";
+            inputField.placeholder = "Add new category";
+            inputField.name="category"
+        console.log(event.currentTarget.value)
+        if (event.currentTarget.value == "new_category") {
+            console.log("hhhhhello");
+            categoryDropdown.replaceWith(inputField);
+        } 
+      }
+
+    function display_options(){
+      inputField.replaceWith(categoryDropdown);
+    }
+</script>
+
+{% endblock %}

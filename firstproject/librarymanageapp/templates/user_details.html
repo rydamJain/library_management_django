@@ -1,0 +1,80 @@
+{% extends 'base.html' %}
+{%block body%}
+
+<div class="container mt-3" style="background-color: rgb(233, 206, 55);">
+    <h1 class="text-center">Users registered In Library</h1><br>
+
+    <form method="GET">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search user" name="search" id="search">
+        </div>
+    </form>
+
+    <table class="table table-hover" id="example">
+        <thead>
+            <tr>
+                <th style=" width: 10px;">User ID</th>
+                <th style="width: 80px;">Username</th>
+                <th style="width: 80px;">First Name</th>
+                <th style="width: 80px;">Last Name</th>
+                <th style="width: 10px;">Email</th>
+                <th style="width: 3px;">Remove User</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user_detail in users_details_table %}
+            <tr>
+                <td >{{user_detail.id}}</td>
+                <td>{{user_detail.username}}</td>
+                <td>{{user_detail.first_name}}</td>
+                <td>{{user_detail.last_name}}</td>
+                <td>{{user_detail.email}}</td>
+                <td>
+                <form method="post" action="deleteuser">
+                    {%csrf_token%}  
+                {% if user_detail.id == 1 %}    
+                 <button type="button" class="btn btn-success" disabled>
+                    ADMIN
+                 </button>
+                 {% else %}
+                 <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter-{{user_detail.id}}">
+                    REMOVE
+                 </button>
+                 {% endif %}
+                 <div class="modal fade" id="exampleModalCenter-{{user_detail.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                     <div class="modal-dialog modal-dialog-centered" role="document">
+                         <div class="modal-content">
+                             <div class="modal-header">
+                                 <h5 class="modal-title" id="exampleModalLongTitle">Do you really want to REMOVE the user?</h5>
+                                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                     <span aria-hidden="true">&times;</span>
+                                 </button>
+                                 <input type="hidden" value="{{user_detail.id}}" name="user_detail_id">
+                             </div>
+                             <div class="modal-footer">
+                                <button type="submit" class="btn btn-danger">Delete</button>
+                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                             </div>
+                         </div>
+                     </div>
+                 </div>
+             </form>         
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+   
+    <script>
+        $(document).ready(function(){
+            $("#search").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("tbody tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+        </script>
+        
+    {%endblock%}

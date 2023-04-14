@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+{% load i18n %}
+{% block body %}
+<div class="container mt-3" align="center" style="padding: 30; background-color: rgba(0, 0, 0, 0.726)">
+    <h1 style="color:crimson" align="center">
+        INSTRUCTIONS FOLLOWED IN LIBRARY
+    </h1>
+{% blocktrans %}
+<h4 style="margin-left: 30;margin-top:30; color: aliceblue;" align="left">
+    1. The user can issue 3 books at a time. <br><br>
+    2. User can issue only one copy of a book.<br><br>
+    3. When you Log In, you will get a notification regarding return of book after 15 days of Issue.<br><br>
+    4. After 15 days Rs 5 will be charged as a fine for each day.  <br><br>
+    5. User can see the history of his Borrowed Books and Returned Books.
+</h4>
+{% endblocktrans %}
+</div>
+
+{% endblock %}

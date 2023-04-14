@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+{%block body%}
+
+    <div style="margin-top:20px;;margin-left:900px;">
+        <a style="font-weight: 900;height:45;font-size:large" type="button" class="btn btn-success" href="http://127.0.0.1:8000/librarymanageapp/view-issued-books">View Issued Books</a>
+    </div>
+
+
+<div class="container mt-3" style="background-color: rgb(233, 206, 55);">
+    <h1 class="text-center">Available Books In Library</h1><br>
+
+    <form method="GET">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Search books" name="search" id="search">
+        </div>
+    </form>
+
+    <div>
+        <div class="dropdown">
+            <a class="btn btn-success dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                CATEGORY
+            </a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+              {%for category in categories%}
+              <!-- <H6>{{category}}</H6> -->
+                <form method="post" action="viewbooks">
+                    {%csrf_token%}
+                    <input name="category" value="{{category}}" type="hidden" >
+                    <button type="submit" class="dropdown-item">{{category}}</button>
+                </form>
+              {%endfor%}
+              <a class="dropdown-item" href="viewbooks">All</a>
+             </div>
+         </div>
+    </div>
+    {% if messages %}
+    <dialog style="background-color: lightpink;" id="closedialog" open>
+    {% for message in messages%}
+         {{message}}
+    {% endfor %}
+    <button  onclick="closeDialog()">Close</button>
+</dialog>
+{% endif %}
+
+    <table class="table table-hover" id="example">
+        <thead>
+            <tr>
+                <th style=" width: 80px;">Book Name</th>
+                <th style="width: 80px;">Author</th>
+                <th style="width: 80px;">Book ID</th>
+                <th style="width: 80px;">Quantity</th>
+                <th style="width: 80px;">Price</th>
+                {% if not request.user.is_superuser %}
+                <th style="width: 80px;">Issue Request</th>
+                {% else %}
+                <!-- <th style="width: 80px;">Issue Request</th> -->
+                <th style="width: 80px;">Remove Book</th>
+                {%endif%}
+            </tr>
+        </thead>
+        <tbody>
+            {% for book in books %}
+            <tr>
+                <td >{{book.name}}</td>
+                <td>{{book.author}}</td>
+                <td>{{book.id}}</td>
+                <td>{{book.quantity}}</td>
+                <td>Rs {{book.price}}</td>
+                {% if not request.user.is_superuser %}
+                <td>
+                    <form method="post" action="requests" >
+                        {% csrf_token %}
+                        <input name="book_id" value="{{book.id}}" type="hidden" >
+                        <input name="book_name" value="{{book.name}}" type="hidden" >
+                        <button style="background-color: lightpink; color: black; font-weight: 500;" type="submit" class="btn btn-primary mt-4">Request For Book</button>
+                    </form>
+                </td>
+                {% else %}
+                <!-- <td>
+                    <form method="post" action="requests">
+                        {% csrf_token %}
+                        <input name="book_id" value={{book.id}} type="hidden" >
+                        <input name="book_name" value={{book.name}} type="hidden" >
+                        <button style="background-color: lightpink; color: black; font-weight: 500;" type="submit" class="btn btn-primary mt-4">Request For Book</button>
+                    </form>
+                </td> -->
+                
+                <!-- <td>
+                    <form method="post" action="deletebook">
+                        {% csrf_token %}
+                        <input name="book_id" value={{book.id}} type="hidden" >
+                        <input name="quantity" value={{book.quantity}} type="hidden" >
+                        <button style="border: red; background-color: red; color: black; font-weight: 500;" type="submit" class="btn btn-primary mt-4">REMOVE </button>
+                    </form>
+                    
+                </td> -->
+
+<td>
+       <form method="post" action="deletebook">
+        {%csrf_token%}
+                  
+    <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModalCenter-{{book.id}}">
+        DELETE BOOK
+    </button>
+    
+    <div class="modal fade" id="exampleModalCenter-{{book.id}}" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLongTitle">How many books do you want to delete?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row mt-4" align="center">
+                        <div class="form-group col-md-12">
+                            <label style="padding: 5px;">Quantity:</label>
+                            <input type="number" class="form-control" id="quantity" name="quantity">
+                            <input type="hidden" name="book_id" value="{{book.id}}">
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="submit" class="btn btn-danger">Delete</button>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</form> 
+            
+            </td>
+
+                {%endif%}
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    </div>
+   
+
+    <script>
+        $(document).ready(function(){
+            $("#search").on("keyup", function() {
+                var value = $(this).val().toLowerCase();
+                $("tbody tr").filter(function() {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                });
+            });
+        });
+
+        var quantityInput = document.getElementById('book_quantity');
+            var hiddenInput = document.getElementsByName('quantity')[0];
+            quantityInput.addEventListener('change', function() {
+            var quantityValue = parseInt(quantityInput.value);
+            hiddenInput.value = quantityValue;
+            });
+
+            
+            function closeDialog() {
+                const dialog = document.getElementById("closedialog");
+                dialog.close();
+              }
+    </script>
+      
+        
+    {%endblock%}

@@ -1,0 +1,130 @@
+{% load static %}
+
+<html>
+    <head>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+        rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+        crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        
+         <style type="text/css">
+          .sidenav {
+            height: 100%;
+            width: 0;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(245, 213, 31);
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 20px;
+          }
+          
+          .sidenav a {
+            padding: 6px 8px 6px 16px;
+            text-decoration: none;
+            font-size: 16px;
+            color: black;
+            display: block;
+          }
+          
+          .sidenav a:hover {
+            color: #f1f1f1;
+          }
+          
+          .closebtn {
+            position: absolute;
+            top: 0;
+            right: 25px;
+            font-size: 36px;
+            margin-left: 50px;
+          }
+          
+          .main {
+            margin-left: 0;
+            transition: margin-left 0.5s;
+          }
+          
+          /* Add media queries for small screens */
+          @media screen and (max-height: 450px) {
+            .sidenav {
+              padding-top: 15px;
+            }
+            .sidenav a {
+              font-size: 18px;
+            }
+          }
+          
+       
+        </style>
+    </head>
+    
+    <body style=" background-size:cover;background-repeat:no-repeat;background-image: url({% static 'images/background.jpg' %});">
+       
+        <nav  style="color:rgb(129, 13, 13)" class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                {% if  user.is_authenticated %}
+                <li>
+                  <div class="sidenav">
+                    <a href="http://127.0.0.1:8000/librarymanageapp">Home</a>
+                    <br>
+                    <a href="view-issued-books">Issued Books History</a>
+                    <br>
+                    <a href="view-return-books">Returned Books History</a>
+                    <a href="#" class="closebtn" onclick="closeNav()">&times;</a>
+                  </div>
+                  <div class="main">
+                    <span style="font-size:30px;cursor:pointer;color:black" onclick="openNav()">&#9776; </span>
+                  </div>
+                </li>
+                {%endif%}
+               
+                {% if not user.is_authenticated %}
+                <li style="margin-left: 1000px;" class="nav-item">
+                    <a style="font-weight: 900; background-color: lightpink; height: 35; width:100;" type="button" class="btn btn-info" href="http://127.0.0.1:8000/librarymanageapp/register">Register</a>
+                </li>
+                {% else %}
+                <li margin-left: 100px>
+                  <h2 style="margin-left:20">Hello {{username}}</h2>
+                </li>
+                <li style="margin-left: 500px;" class="nav-item">
+                  <a style="font-weight: 900; background-color: lightpink; height: 35; width:100;" type="button" class="btn btn-info" href="http://127.0.0.1:8000/librarymanageapp">Home</a>
+              </li>
+              <li style="margin-left: 30px;" class="nav-item">
+                <a style="font-weight: 900; background-color: lightpink; height: 35; width:100;" type="button" class="btn btn-info" href="http://127.0.0.1:8000/librarymanageapp/logoutpage">Logout</a>
+              </li>
+              <li style="margin-left: 200px;" class="nav-item">
+                <a style="font-weight: 800; background-color: rgb(138, 196, 138); height: 35; width:130;" type="button" class="btn btn-info" >USER ID {{request.user.id}}</a>
+              </li>
+              {% endif %}
+             
+              </ul>
+            </div>
+          </nav>
+
+          
+        {% block body %}
+       
+        {% endblock body %}
+    </body>
+   
+    <script>
+      function openNav() {
+        document.querySelector(".sidenav").style.width = "160px";
+       
+      }
+     
+      function closeNav() {
+        document.querySelector(".sidenav").style.width = "0";
+       
+      }
+    </script>
+</html>
